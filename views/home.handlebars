@@ -1,0 +1,22 @@
+<div class="intro">
+    <h1>Here at Pet we care about pets... <br>Thats why we ask you to sign to give animals the right to <span class="vote"> vote</span> !</h1>
+</div>
+<p>{{message}}</p>
+<p>{{messageTwo}}</p>
+<form method="POST" class="form">
+<div class="fields">
+    <input id="firstName" type="text" placeholder="First name" name="name" >
+    <input id="secondName" type="text" placeholder="Second Name" name="second" >
+</div>
+<br>
+<div class="sign">
+    <canvas id="canvas" width="400" height="80"></canvas>
+    <h3>Sign Here</h3>
+    <button id="button">Submit</button>
+</div>
+<div class="hidden">
+    <input id="hidden" type="text" name="hidden" >
+</div>
+<input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+</form>

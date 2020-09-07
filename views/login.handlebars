@@ -1,0 +1,11 @@
+<p>{{error}}</p>
+<p>{{otherError}}</p>
+<form method="POST">
+<div class="logForm">
+    <input type="text" placeholder="Email Address" name="logMail" >
+    <input type="password" placeholder="Password" name="logPass">
+    <button>LOG IN</button>
+    <p>If you are not a member yet, please register <span><a href="/registration">here</a></span></p>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</div>
+</form>

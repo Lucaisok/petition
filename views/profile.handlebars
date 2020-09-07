@@ -1,0 +1,13 @@
+<br>
+<h1 style="color: blanchedalmond;">Tell Us Something About Yourself {{firstName}}, <br> If You Want...</h1>
+<p>{{urlMessage}}</p>
+<p>{{otherUrlMessage}}</p>
+<form method="POST">
+    <div class="profileForm">
+    <input type="text" placeholder="Age" name="age">
+    <input type="text" placeholder="City" name="city">
+    <input type="text" placeholder="Homepage" name="url">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button>Continue</button>
+    </div>
+</form>

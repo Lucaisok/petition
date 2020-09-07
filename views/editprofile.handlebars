@@ -1,0 +1,15 @@
+<h1>Edit your profile</h1>
+
+<form method="post" id="edit">
+    <input type="text" placeholder="First Name" name="updateFirst">
+    <input type="text" placeholder="Last Name" name="updateLast">
+    <input type="text" placeholder="Email Address" name="updateEmail">
+    <input type="password" placeholder="Password" name="updatePass">
+    <input type="text" placeholder="Age" name="updateAge">
+    <input type="text" placeholder="City" name="updateCity">
+    <input type="text" placeholder="Homepage" name="updateUrl">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button>Update</button>
+</form>
+
+<p>{{er}}</p>

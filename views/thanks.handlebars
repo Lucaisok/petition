@@ -1,0 +1,14 @@
+<h1>Thanks</h1>
+<div class="thankSign">
+     <img class="signature" src={{signPic}} alt="Signature">
+     <h2>See all <a href="/signers" style="text-decoration: none; color: #e43f5a"> {{countOfSigns}}</a> petters</h2>
+     <br>
+     <h2>Or</h2>
+</div>
+<div class="updateFlex">
+    {{!-- <h2><a class="update" href="/profile/edit">Update Profile</a></h2> --}}
+    <form method="POST" action="remove">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button class="delete">Delete Signature</button>
+    </form>
+</div>

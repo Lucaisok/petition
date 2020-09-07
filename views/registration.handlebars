@@ -1,0 +1,14 @@
+<p>{{errorMessage}}</p>
+<p>{{missingField}}</p>
+<form method="POST">
+    <div class="registrationForm">
+    <input type="text" placeholder="First Name" name="registerFirst">
+    <input type="text" placeholder="Last Name" name="registerLast">
+    <input type="text" placeholder="Email Address" name="registerMail">
+    <input type="password" placeholder="Password" name="registerPass">
+    <button id="signupButton">SIGN UP</button>
+        <p>If you are already a member, please <span><a href="./login">log in</a></span></p>
+    </div>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</form>
+
